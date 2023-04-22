@@ -26,7 +26,7 @@ npm install --save mongodb apollo-server graphql express
 3.3. Crea los archivos llamados "server.js" y "schema.js" para configurar el servidor y la conexión a MongoDB.
 3.4. En el servidor iniciaremos el back y en el schema organizaremos la estructura del funcionamiento deseado.
 4. Front-end (Next.js):
-4.1  Inicializa un proyecto de Next.js con nombre front:
+4.1. Inicializa un proyecto de Next.js con nombre front:
 ```
 npx create-next-app front
 ```
@@ -49,37 +49,37 @@ npm install @apollo/client graphql
 docker-compose up
 ```
 8. Terminando con el back:
-8.1 Para tratar con informacion delicada instala dotenv:
+8.1. Para tratar con informacion delicada instala dotenv:
 ```
 npm install dotenv
 ```
-8.2 Crea un archivo .env en el back y agrega las variables de entorno que necesitas, como la uri de mongo.
-8.3 En donde lo necesites importa dotemv y carga las variables de entorno desde el archivo .env:
+8.2. Crea un archivo .env en el back y agrega las variables de entorno que necesitas, como la uri de mongo.
+8.3. En donde lo necesites importa dotemv y carga las variables de entorno desde el archivo .env:
 ```
 require('dotenv').config();
 ```
-8.4 Accede a las variables de entorno usando:
+8.4. Accede a las variables de entorno usando:
 ```
 process.env.NOMBRE_DE_LA_VARIABLE;
 ```
-8.6 Instala nodemon:
+8.6. Instala nodemon:
 ```
 npm install --save-dev nodemon
 ```
-8.7 Configura el package.json para la inicializacion correcta de tu servidor, en este caso el servidor se inicializa con:
+8.7. Configura el package.json para la inicializacion correcta de tu servidor, en este caso el servidor se inicializa con:
 ```
 npm run dev
 ```
-8.8 IMPORTANTE los archivos de Docker deben modificarse teniendo en cuenta .env
-9 Finalizar la configuracion del front
-9.1 Instala las dependencias necesarias:
+8.8. IMPORTANTE los archivos de Docker deben modificarse teniendo en cuenta .env
+9. Finalizar la configuracion del front
+9.1. Instala las dependencias necesarias:
 ```
 npm install @apollo/client grapql
 ```
-9.2 Crea una carpeta llamada "lib" dentro de src.
-9.3 Crea dentro un archivo llamado apolloClient.tsx o .js para configurar el cliente Apollo GraphQL para conectarse al back.
-9.4 Ahora en "src/pages" modificca el archivo llamado "_app.tsx" para envolver tu aplicacion con el componente "ApolloProvider".
-9.5 Instala los paquetes de tipos necesarios en el front para evitar errores:
+9.2. Crea una carpeta llamada "lib" dentro de src.
+9.3. Crea dentro un archivo llamado apolloClient.tsx o .js para configurar el cliente Apollo GraphQL para conectarse al back.
+9.4. Ahora en "src/pages" modificca el archivo llamado "_app.tsx" para envolver tu aplicacion con el componente "ApolloProvider".
+9.5. Instala los paquetes de tipos necesarios en el front para evitar errores:
 ```
 npm install --save-dev @types/react @types/nodes
 ```
