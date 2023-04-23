@@ -43,6 +43,7 @@ npm install @apollo/client graphql
  6.1. Regresa a la carpeta principal del proyecto y crea un archivo "docker-compose.yml".
  6.2. Abre "docker-compose.yml" en tu editor favorito y agrega el codigo para configurar Docker Compose para el proyecto:
 7. Ejecuta el proyecto:
+ 
  7.1. Asegúrate de tener instalado Docker y Docker Compose en tu máquina.
  7.2. Ejecuta el siguiente comando en la carpeta principal del proyecto para iniciar todos los servicios:
 ```
