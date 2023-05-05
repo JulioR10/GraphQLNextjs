@@ -1,6 +1,6 @@
 import { ApolloProvider } from "@apollo/client";
 import type { AppProps } from "next/app";
-import getClient from "../lib/ApolloClient";
+import getClient from "../lib/apolloClient";
 
 function MyApp({ Component, pageProps }: AppProps) {
   // Obtén la instancia del cliente Apollo utilizando getClient()
